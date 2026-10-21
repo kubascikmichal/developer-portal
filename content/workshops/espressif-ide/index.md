@@ -263,7 +263,7 @@ This file will be used by this project when calling the SDK configuration interf
 
 To use the new configuration entries, you can do:
 
-{{< highlight c "linenos=table,hl_lines=">}}
+{{< highlight c "linenos=true,hl_lines=">}}
     #define WIFI_SSID CONFIG_ESP_WIFI_SSID
     #define WIFI_PASS CONFIG_ESP_WIFI_PASSWORD
 {{< /highlight >}}
@@ -443,4 +443,4 @@ Thank you for participating in this workshop. We hope you found it informative a
 
 ### Next steps
 
-- [ESP-IDF Workshop](../esp-idf-with-esp32-c6)
+- [ESP-IDF Workshop](esp-idf-with-esp32-c6)

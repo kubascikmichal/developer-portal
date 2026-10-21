@@ -101,7 +101,7 @@ For a full walkthrough including examples and migration tips, see the Developer 
 
 ESP-IDF 6.0 ships with a built-in **MCP (Model Context Protocol) server**, enabling AI assistants to interact directly with your ESP-IDF project through a standardized protocol. The server exposes tools for the most common development operations: building, flashing, setting the target, and cleaning, as well as resources to query the current project configuration, build status, and connected devices.
 
-The recommended way to launch the server is via `eim run`, which uses the [ESP-IDF Installation Manager (EIM)](https://github.com/espressif/idf-im-cli) to spawn a new process with the ESP-IDF environment already set up:
+The recommended way to launch the server is via `eim run`, which uses the [ESP-IDF Installation Manager (EIM)](https://github.com/espressif/idf-im-ui) to spawn a new process with the ESP-IDF environment already set up:
 
 ```bash
 eim run "idf.py mcp-server"
@@ -111,8 +111,8 @@ This feature is particularly useful for IDE-based AI agents like VS Code Copilot
 
 To add the MCP server to your IDE, use the following configuration:
 
-{{< tabs groupId="mcp-ide" >}}
-{{% tab name="VS Code" %}}
+{{< tabs group="mcp-ide" >}}
+{{< tab label="VS Code" >}}
 Add the following to your `mcp.json`:
 ```json
 {
@@ -130,8 +130,8 @@ Add the following to your `mcp.json`:
   }
 }
 ```
-{{% /tab %}}
-{{% tab name="Cursor" %}}
+{{< /tab >}}
+{{< tab label="Cursor" >}}
 Add the following to your `mcp.json`:
 ```json
 {
@@ -149,7 +149,7 @@ Add the following to your `mcp.json`:
   }
 }
 ```
-{{% /tab %}}
+{{< /tab >}}
 {{< /tabs >}}
 
 The `mcp` feature must be installed via EIM. A dedicated developer portal article with a full walkthrough is coming soon.
