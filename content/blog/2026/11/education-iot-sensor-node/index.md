@@ -1,6 +1,6 @@
 ---
 title: "IoT sensor node for education support"
-date: 2026-04-17
+date: 2026-11-20
 showAuthor: false
 authors:
     - "tupy-andrej"
